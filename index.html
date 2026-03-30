@@ -37,48 +37,62 @@
 
 
       
-    <div class="project">
+   <div class="project">
   <h3>High-Speed Servo-Controlled VFFS Packaging System</h3>
 
   <div class="project-row">
     <div class="project-media">
-      <img src="images/VFFS_MACHINE_PICTURE.png" alt="VFFS Packaging Machine" class="project-image-large">
+      <img src="images/VFFS_MACHINE_PICTURE.png" class="project-image-large">
     </div>
+
     <div class="project-text">
       <p>
-        Designed and implemented a two-axis servo-driven VFFS packaging system using industrial PLC and motion control architecture for high-speed, repeatable production.
+        Designed and implemented a two-axis servo-driven vertical form fill and seal (VFFS) packaging system using industrial PLC-based motion control for high-speed, repeatable production.
       </p>
 
       <p>
-        <strong>Technology Stack:</strong> Rockwell Studio 5000, FactoryTalk View, FactoryTalk Linx, EtherNet/IP, Kinetix servo drives, industrial HMI
+        <strong>Technology Stack:</strong> Rockwell Studio 5000 (Logix), FactoryTalk View (HMI), FactoryTalk Linx (communications), EtherNet/IP, Kinetix servo drives, encoder feedback systems
       </p>
 
       <p>
-        <strong>Architecture:</strong> PLC-controlled system with EtherNet/IP communication to servo drives and HMI. Implemented machine state sequencing, motion commands, and full system integration across controller, drives, and operator interface.
+        <strong>Control Architecture:</strong> PLC acts as the supervisory controller, executing machine state sequencing (startup, homing, production, fault handling) and generating motion commands for film pull and cross-jaw axes. Motion commands are transmitted over EtherNet/IP to servo drives, which execute cascaded position, velocity, and current control loops with encoder feedback.
       </p>
 
       <p>
-        <strong>Motion Control:</strong> Servo-based indexing with CAM profiles for synchronized film pull and cross-jaw motion. Applied manual tuning and velocity feedforward (FFV).
+        <strong>Networking:</strong> Implemented EtherNet/IP-based communication between controller, drives, and HMI. Configured device-level communication for command, feedback, and diagnostics, including axis status, position/velocity feedback, and fault handling.
       </p>
 
       <p>
-        <strong>Result:</strong> Reduced peak-to-peak following error from ~0.064 to ~0.0031 (~20× improvement).
+        <strong>Motion Control:</strong> Implemented servo-based indexing and coordinated cyclic motion between axes. Selected CAM-based motion profiles (5th-order polynomial) to ensure continuous position, velocity, acceleration, and jerk, reducing vibration and improving synchronization compared to trapezoidal profiles.
+      </p>
+
+      <p>
+        <strong>Tuning and Performance:</strong> Performed manual drive tuning of position and velocity loops. Applied velocity feedforward (FFV) to reduce tracking error and improve dynamic response during acceleration and constant velocity segments.
+      </p>
+
+      <p>
+        <strong>Result:</strong> Reduced peak-to-peak position following error from ~0.064 to ~0.0031 (~20× improvement), significantly improving tracking accuracy and motion stability.
       </p>
     </div>
   </div>
 
   <div class="project-row">
     <div class="project-media">
-      <img src="images/VFFS_ETHERNET_PICTURE.png" alt="EtherNet/IP System Architecture" class="project-image-medium">
+      <img src="images/VFFS_ETHERNET_PICTURE.png" class="project-image-medium">
     </div>
+
     <div class="project-text">
       <p>
-        <strong>HMI:</strong> Developed in FactoryTalk View for production control, recipe parameters, monitoring, and fault handling.
+        <strong>System Integration:</strong> Integrated PLC, servo drives, HMI, and sensors into a unified automation system. Implemented coordinated sequencing of film motion, jaw motion, and sealing timing to maintain consistent operation across varying production rates.
+      </p>
+
+      <p>
+        <strong>HMI Development:</strong> Developed operator interface in FactoryTalk View for production control, recipe parameter configuration (bag length, BPM, seal time, temperature), real-time monitoring, and fault recovery.
       </p>
 
       <div class="hmi-gallery">
-        <img src="images/VFFS_HMI_MONITORING_PICTURE.png" alt="HMI Monitoring Screen" class="project-image-small">
-        <img src="images/VFFS_HMI_SETTINGS_PICTURE.png" alt="HMI Settings Screen" class="project-image-small">
+        <img src="images/VFFS_HMI_MONITORING_PICTURE.png" class="project-image-small">
+        <img src="images/VFFS_HMI_SETTINGS_PICTURE.png" class="project-image-small">
       </div>
     </div>
   </div>
