@@ -3,29 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>mitch fox | controls & robotics</title>
+  <title>Mitch Fox | Controls & Robotics</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>mitch fox</h1>
-    <p>electrical engineering student focused on controls, automation, and robotics.</p>
+    <h1>Mitch Fox</h1>
+    <p>Electrical engineering student focused on controls, automation, and robotics.</p>
     <nav>
-      <a href="#projects">projects</a>
-      <a href="#about">about</a>
-      <a href="#contact">contact</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section id="projects">
-      <h2>projects</h2>
+      <h2>Projects</h2>
 
       <div class="project">
-        <h3>high-speed 2-axis servo packaging system</h3>
-        <p>rockwell studio 5000, factorytalk view, ethernet/ip, servo motion control.</p>
-        <p>reduced peak-to-peak position following error from ~0.064 to ~0.0031 through feedforward velocity tuning.</p>
-      </div>
+  <h3>High-Speed Servo-Controlled VFFS Packaging System</h3>
+
+  <p>
+    Designed and implemented a two-axis servo-driven vertical form fill and seal (VFFS) packaging system using industrial motion control and PLC architecture. The system integrates coordinated motion, closed-loop temperature regulation, and operator-defined production parameters to support high-speed, repeatable, and flexible packaging operation.
+  </p>
+
+  <p>
+    <strong>System Overview:</strong> The machine automates the process of feeding packaging film, forming it into a vertical tube, pulling the film by a user-defined bag length, closing heated cross jaws to create a seal, holding for a defined seal time, and repeating the cycle continuously at an operator-selected production rate.
+  </p>
+
+  <p>
+    <strong>Automation Architecture:</strong> The control system consists of a centralized controller, servo drives, industrial HMI, and Ethernet-based communication between devices. The controller manages machine sequencing, including heater startup, homing, start/stop production, and fault handling, while also generating motion commands for the film pull axis and cross jaw axis.
+  </p>
+
+  <p>
+    <strong>Motion Control:</strong> The system uses servo-based motion control to achieve precise indexing, repeatable jaw actuation, and smooth motion profiles. A 5th-order polynomial CAM profile was selected because it provides continuous position, velocity, acceleration, and jerk, reducing vibration and improving motion consistency compared to trapezoidal, sinusoidal, and cubic alternatives.
+  </p>
+
+  <p>
+    <strong>Drive and Motor Selection:</strong> Servo motors were chosen over induction motors because the application requires accurate cyclic indexing, high dynamic response, tight speed regulation, and repeatable programmable motion profiles. The selected drive and motor sizing met the required continuous and peak current ratio criteria for proper matching.
+  </p>
+
+  <p>
+    <strong>HMI Development:</strong> Developed a human-machine interface in FactoryTalk View to support production control, heater control, fault clearing, recipe parameter adjustment, monitoring, and trending. The interface allows operators to start and stop production, adjust bag length, seal time, seal bar temperature, jaw move angle, and production rate, while also viewing axis position, axis faults, and real-time trend data for velocity and current feedback.
+  </p>
+
+  <p>
+    <strong>Performance Improvement:</strong> Reduced peak-to-peak position following error from approximately 0.064 to 0.0031 through manual tuning with velocity feedforward enabled at 100%, resulting in an improvement of about 20 times in tracking accuracy.
+  </p>
+
+  <p>
+    <strong>Tools and Technologies:</strong> Rockwell Studio 5000, FactoryTalk View, FactoryTalk Linx, EtherNet/IP, Kinetix servo drives, servo motors, industrial HMI, encoder feedback, and PID temperature control.
+  </p>
+</div>
 
       <div class="project">
         <h3>mobile robot platform</h3>
