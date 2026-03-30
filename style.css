@@ -57,3 +57,13 @@ img {
   width: 300px;
   border-radius: 8px;
 }
+
+.image-right {
+  float: right;
+  margin: 0 0 10px 20px;
+}
+
+.image-right img {
+  width: 300px;
+  border-radius: 8px;
+}
