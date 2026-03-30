@@ -1,69 +1,57 @@
-body {
-  font-family: arial, sans-serif;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  line-height: 1.6;
-  background: #f7f7f7;
-  color: #111;
-}
-
-header {
-  margin-bottom: 50px;
-}
-
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #0056b3;
-}
-
 .project {
   background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px;
+  margin-bottom: 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.project-image {
-  width: 100%;
-  max-width: 400px;
-  margin: 15px auto;
+.project-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.project-media {
+  flex: 0 0 auto;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.project-text p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.project-image-large {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 8px;
   display: block;
+}
+
+.project-image-medium {
+  width: 320px;
+  max-width: 100%;
   border-radius: 8px;
+  display: block;
 }
 
-
-img {
-  max-width: 300px !important;
-}
-
-
-.experience-item {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.image-left {
-  float: left;
-  margin: 0 20px 10px 0;
-}
-
-.image-left img {
-  width: 300px;
+.project-image-small {
+  width: 220px;
+  max-width: 100%;
   border-radius: 8px;
+  display: block;
 }
 
-.image-right {
-  float: right;
-  margin: 0 0 10px 20px;
-}
-
-.image-right img {
-  width: 300px;
-  border-radius: 8px;
+.hmi-gallery {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
 }
