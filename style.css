@@ -33,3 +33,8 @@ nav a {
   display: block;
   border-radius: 8px;
 }
+
+
+img {
+  max-width: 300px !important;
+}
