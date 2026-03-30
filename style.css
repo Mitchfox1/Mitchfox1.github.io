@@ -1,8 +1,49 @@
+body {
+  font-family: arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #111;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
 .project {
   background: white;
   padding: 24px;
   margin-bottom: 28px;
   border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.experience-item {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -26,6 +67,14 @@
 .project-text p {
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .project-image-large {
@@ -54,4 +103,8 @@
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 12px;
+}
+
+#contact p {
+  margin: 8px 0;
 }
