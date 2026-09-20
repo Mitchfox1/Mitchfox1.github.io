@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mitch Fox | Controls & Robotics</title>
+  <meta name="description" content="Mitch Fox is an electrical engineering student working across launch infrastructure, industrial controls, high-speed data acquisition, and robotics.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Mitch Fox</h1>
-    <p>Electrical Engineering student specializing in Rockwell PLC-based motion control, EtherNet/IP communication, FactoryTalk HMI systems, and robotics integration.</p>
+    <p>Electrical Engineering student building launch infrastructure, industrial control systems, high-speed data acquisition, and robotic systems.</p>
     <nav>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -22,13 +23,28 @@
     <section id="experience">
   <h2>Experience</h2>
 
+  <div class="experience-item experience-item-featured">
+    <h3>Starship Launch Fluid Engineering Intern — SpaceX</h3>
+    <p class="experience-date"><em>Aug 2026 – Present</em></p>
+
+    <ul>
+      <li>Integrated and troubleshot high-speed DAQ systems and instrumentation across Starship launch infrastructure, supporting sensor readiness under launch-driven schedules.</li>
+      <li>Developed and revised EPLAN electrical schematics and wiring diagrams for power, controls, communications, and field instrumentation.</li>
+      <li>Designed CAD rework for launch-site hardware and supported fabrication and implementation of field modifications.</li>
+      <li>Performed power and communications wiring for air separation unit systems and supported industrial equipment integration.</li>
+    </ul>
+  </div>
+
   <div class="experience-item">
     <h3>Electrical Engineering Intern — Komatsu</h3>
-    <p><em>Summer 2026 (Incoming)</em></p>
+    <p class="experience-date"><em>May 2026 – Sep 2026</em></p>
 
-    <p>
-      Incoming Electrical Engineering Intern on the drills team, focused on industrial electrical systems, hardware design, and manufacturing applications. The role involves working with electrical schematics, component evaluation, and system-level integration in a heavy equipment environment.
-    </p>
+    <ul>
+      <li>Designed an Ethernet-to-PROFINET communication interface using PLX31 and PLX51 gateways, enabling PLC integration with third-party equipment while reducing per-system cost from approximately $30,000 to $3,000.</li>
+      <li>Configured PLC communications, network mapping, and device interfaces for integration with the existing control system.</li>
+      <li>Developed HMI automation and localization tools that enabled operators to use machine controls across multiple languages.</li>
+      <li>Supported control-system troubleshooting, electrical integration, testing, and validation for automated drilling equipment.</li>
+    </ul>
   </div>
 
       <div class="experience-item">
@@ -44,6 +60,55 @@
     <section id="projects">
       <h2>Projects</h2>
 
+      <div class="project project-professional">
+        <p class="project-label">Professional Project · SpaceX</p>
+        <h3>Starship Launch Infrastructure &amp; High-Speed DAQ</h3>
+
+        <p>
+          Integrated high-speed data acquisition hardware and field instrumentation supporting Starship launch infrastructure, working directly with sensors and electrical systems during time-critical pre-launch operations.
+        </p>
+
+        <p>
+          <strong>Instrumentation &amp; DAQ:</strong> Integrated and troubleshot high-speed DAQ systems and sensors, verified signal paths, and supported instrumentation readiness around the launch site.
+        </p>
+
+        <p>
+          <strong>Electrical Design:</strong> Created and revised EPLAN schematics for power, controls, communications, and field wiring. Produced CAD rework designs for existing hardware and supported fabrication and field implementation.
+        </p>
+
+        <p>
+          <strong>Industrial Integration:</strong> Performed power and communications wiring for air separation unit systems and supported the integration of industrial equipment into site infrastructure.
+        </p>
+
+        <p class="technology-line">
+          <strong>Tools and Technologies:</strong> High-speed DAQ, industrial sensors, EPLAN, CAD, power distribution, communications wiring, and field troubleshooting.
+        </p>
+      </div>
+
+      <div class="project project-professional">
+        <p class="project-label">Professional Project · Komatsu</p>
+        <h3>PLC Communications Gateway &amp; Multilingual HMI Automation</h3>
+
+        <p>
+          Designed and implemented a cost-optimized industrial network interface that enabled a PLC to communicate with third-party equipment across Ethernet and PROFINET networks.
+        </p>
+
+        <p>
+          <strong>Gateway Architecture:</strong> Used PLX31 and PLX51 communication gateways to convert protocols, configured network and data mappings, and completed the PLC-side interface required for integration with the existing control system.
+        </p>
+
+        <p class="project-impact">
+          <strong>Result:</strong> Reduced the estimated per-system hardware cost from approximately $30,000 to $3,000—a 90% reduction.
+        </p>
+
+        <p>
+          <strong>HMI Localization:</strong> Developed automation tools for operator-interface localization, allowing operators who speak different languages to use the same machine-control screens more effectively.
+        </p>
+
+        <p class="technology-line">
+          <strong>Tools and Technologies:</strong> PLCs, PROFINET, Ethernet, PLX31/PLX51 gateways, network mapping, industrial communications, and operator HMIs.
+        </p>
+      </div>
 
       
    <div class="project">
@@ -51,7 +116,7 @@
 
   <div class="project-row">
     <div class="project-media">
-      <img src="images/VFFS_MACHINE_PICTURE.png" class="project-image-large">
+      <img src="images/VFFS_MACHINE_PICTURE.png" alt="Servo-controlled VFFS packaging machine" class="project-image-large">
     </div>
 
     <div class="project-text">
@@ -87,7 +152,7 @@
 
   <div class="project-row">
     <div class="project-media">
-      <img src="images/VFFS_ETHERNET_PICTURE.png" class="project-image-medium">
+      <img src="images/VFFS_ETHERNET_PICTURE.png" alt="VFFS EtherNet/IP control architecture" class="project-image-medium">
     </div>
 
     <div class="project-text">
@@ -100,8 +165,8 @@
       </p>
 
       <div class="hmi-gallery">
-        <img src="images/VFFS_HMI_MONITORING_PICTURE.png" class="project-image-small">
-        <img src="images/VFFS_HMI_SETTINGS_PICTURE.png" class="project-image-small">
+        <img src="images/VFFS_HMI_MONITORING_PICTURE.png" alt="VFFS production monitoring HMI" class="project-image-small">
+        <img src="images/VFFS_HMI_SETTINGS_PICTURE.png" alt="VFFS machine settings HMI" class="project-image-small">
       </div>
     </div>
   </div>
@@ -183,6 +248,8 @@
   </p>
 </div>
 
+    </section>
+
     <section id="about">
   <h2>About</h2>
 
@@ -191,7 +258,7 @@
   </p>
 
   <p>
-    My work centers around industrial automation and robotics platforms, including a servo-driven VFFS packaging system using PLC-based motion control and a mobile robot platform with integrated sensing and vision systems. I am particularly interested in high-performance motion systems, system-level integration, and designing machines that operate reliably in real-world environments.
+    My work spans Starship launch infrastructure, industrial automation, and robotics platforms. I have integrated high-speed DAQ and instrumentation in launch operations, developed cost-optimized PLC communication systems, and built servo-driven and mobile robotic systems.
   </p>
 
   <p>
@@ -222,3 +289,6 @@
     <a href="https://github.com/Mitchfox1">Mitchfox1</a>
   </p>
 </section>
+  </main>
+</body>
+</html>
