@@ -47,6 +47,49 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+.experience-item-featured,
+.project-professional {
+  border-left: 4px solid #0056b3;
+}
+
+.experience-item h3,
+.project h3 {
+  margin-top: 0;
+}
+
+.experience-date {
+  color: #555;
+  margin-top: -8px;
+}
+
+.experience-item ul {
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+
+.experience-item li + li {
+  margin-top: 8px;
+}
+
+.project-label {
+  margin: 0 0 8px;
+  color: #0056b3;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-impact {
+  background: #eef6ff;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.technology-line {
+  color: #333;
+}
+
 .project-row {
   display: flex;
   align-items: flex-start;
@@ -107,4 +150,41 @@ section {
 
 #contact p {
   margin: 8px 0;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 28px 16px;
+  }
+
+  header {
+    margin-bottom: 36px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+  }
+
+  nav a {
+    margin-right: 0;
+  }
+
+  section {
+    margin-bottom: 44px;
+  }
+
+  .project,
+  .experience-item {
+    padding: 18px;
+  }
+
+  .project-row {
+    gap: 18px;
+  }
+
+  .project-text {
+    min-width: 0;
+  }
 }
