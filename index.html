@@ -3,23 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mitch Fox | Controls & Robotics</title>
-  <meta name="description" content="Mitch Fox is an electrical engineering student working across launch infrastructure, industrial controls, high-speed data acquisition, and robotics.">
+  <title>Mitch Fox | Test Infrastructure &amp; Robotics</title>
+  <meta name="description" content="Mitch Fox is an electrical engineering student focused on actuator test infrastructure, servo motion systems, high-speed data acquisition, instrumentation, and robotics hardware.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    <p class="eyebrow">Electrical Engineering · Controls · Instrumentation · Robotics</p>
     <h1>Mitch Fox</h1>
-    <p>Electrical Engineering student building launch infrastructure, industrial control systems, high-speed data acquisition, and robotic systems.</p>
+    <p class="intro">I build and troubleshoot the electrical systems around motion hardware—from servo drives and encoder feedback to DAQ, instrumentation, power distribution, industrial networks, and machine diagnostics.</p>
     <nav>
+      <a href="#focus">Test Infrastructure</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects">Systems</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
+    <section id="focus" class="focus-section">
+      <div class="focus-copy">
+        <p class="section-kicker">Core Focus</p>
+        <h2>Electrical Test Infrastructure</h2>
+        <p class="focus-intro">Hands-on experience spanning motor-drive commissioning, high-speed data acquisition, sensor integration, electrical schematics, field wiring, power distribution, controls, and electromechanical troubleshooting.</p>
+      </div>
+
+      <div class="metrics" aria-label="Selected engineering results">
+        <div class="metric">
+          <strong>20×</strong>
+          <span>lower servo position-following error</span>
+        </div>
+        <div class="metric">
+          <strong>90%</strong>
+          <span>lower industrial interface cost</span>
+        </div>
+        <div class="metric">
+          <strong>High-speed DAQ</strong>
+          <span>integrated in launch operations</span>
+        </div>
+      </div>
+
+      <div class="capability-grid">
+        <article>
+          <h3>Motor Drives &amp; Motion</h3>
+          <p>Kinetix servo drives, encoder feedback, coordinated axes, fifth-order CAM profiles, position/velocity-loop tuning, and velocity feedforward.</p>
+        </article>
+        <article>
+          <h3>DAQ &amp; Instrumentation</h3>
+          <p>High-speed DAQ, launch-site sensors, analog and digital acquisition, signal conditioning, structured logging, and performance validation.</p>
+        </article>
+        <article>
+          <h3>Electrical Integration</h3>
+          <p>EPLAN schematics, power and communications wiring, motor-drive power distribution, CAD rework, EtherNet/IP, and PROFINET integration.</p>
+        </article>
+        <article>
+          <h3>Robotics Hardware</h3>
+          <p>Motor drives, mobile-robot power distribution, vision and LiDAR integration, digital I/O, mechanical packaging, and system-level testing.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="experience">
   <h2>Experience</h2>
 
@@ -47,18 +91,20 @@
     </ul>
   </div>
 
-      <div class="experience-item">
-  <h3>Undergraduate Research Assistant — BioRobotics Lab</h3>
-  <p><em>2025 – Present</em></p>
+  <div class="experience-item">
+    <h3>Undergraduate Research Assistant — BioRobotics Lab</h3>
+    <p class="experience-date"><em>2025 – Present</em></p>
 
-  <p>
-    Working on a modular mobile robot platform, focusing on electrical system integration, power distribution, and hardware layout. Responsibilities include wiring motor drives, integrating sensors (vision and LiDAR), and supporting system-level testing and iteration.
-  </p>
-</div>
+    <ul>
+      <li>Integrated motor drives, electrical power distribution, and system wiring for a modular mecanum mobile robot platform.</li>
+      <li>Integrated Keyence vision and LiDAR sensors and supported system-level testing and iterative hardware improvements.</li>
+      <li>Developed CAD and 3D-printed mounting hardware for drives, sensors, and structural components.</li>
+    </ul>
+  </div>
 </section>
     
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Selected Systems</h2>
 
       <div class="project project-professional">
         <p class="project-label">Professional Project · SpaceX</p>
@@ -172,6 +218,31 @@
   </div>
 </div>
 
+     <div class="project project-professional">
+  <p class="project-label">Data Acquisition · SAE Baja</p>
+  <h3>Vehicle DAQ &amp; Sensor Integration</h3>
+
+  <p>
+    Designed and deployed a microcontroller-based data acquisition system for real-time monitoring of vehicle operating conditions during testing.
+  </p>
+
+  <p>
+    <strong>Architecture:</strong> Implemented acquisition and device interfaces on an STM32F7 using ADC, timers, SPI, I2C, and UART peripherals for synchronized sensing and structured data collection.
+  </p>
+
+  <p>
+    <strong>Instrumentation:</strong> Integrated analog and digital measurements for fuel level, engine speed, temperature, and GPS, including signal conditioning and sensor-interface development.
+  </p>
+
+  <p>
+    <strong>Validation:</strong> Tested sensor behavior across variable operating conditions and iterated on the electrical and embedded implementation to improve data reliability.
+  </p>
+
+  <p class="technology-line">
+    <strong>Tools and Technologies:</strong> STM32F7, embedded C, ADC, timers, SPI, I2C, UART, analog/digital sensors, signal conditioning, and real-time logging.
+  </p>
+</div>
+
      <div class="project">
   <h3>Mobile Robot Platform with Vision and Sensor Integration</h3>
 
@@ -254,15 +325,15 @@
   <h2>About</h2>
 
   <p>
-    I am an Electrical Engineering student focused on controls, automation, and robotics, with hands-on experience building real-world systems that integrate hardware, software, and motion control.
+    I am an Electrical Engineering student focused on electrical test infrastructure, motion control, instrumentation, and robotics hardware. I enjoy the work between the schematic and the data: wiring, commissioning, probing, debugging, tuning, and making a system repeatable.
   </p>
 
   <p>
-    My work spans Starship launch infrastructure, industrial automation, and robotics platforms. I have integrated high-speed DAQ and instrumentation in launch operations, developed cost-optimized PLC communication systems, and built servo-driven and mobile robotic systems.
+    My work spans Starship launch infrastructure, industrial automation, and robotics platforms. I have integrated high-speed DAQ and instrumentation in launch operations, tuned servo-driven machinery, developed cost-optimized PLC communication systems, and integrated motor drives and power distribution on mobile robots.
   </p>
 
   <p>
-    I enjoy working across electrical, mechanical, and control domains to take systems from concept to implementation, with an emphasis on practical performance, reliability, and scalability. My goal is to develop the skills required to build advanced robotic and automated systems capable of operating in complex, real-world conditions.
+    I work comfortably across electrical, controls, embedded, and mechanical boundaries, with an emphasis on trustworthy measurements, practical field execution, and hardware that remains diagnosable and serviceable as systems evolve.
   </p>
 </section>
 
